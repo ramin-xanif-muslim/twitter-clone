@@ -20,11 +20,13 @@
             };
         </script>
     </head>
-    <body class="bg-[#000000] w-full ">
-        <div class="w-full 2xl:w-[1440px] mx-auto pt-1 flex gap-7 justify-between w-full">
+    <body class="bg-[#000000] w-full">
+        <div
+            class="w-full 2xl:w-[1440px] mx-auto pt-1 flex flex-col lg:flex-row gap-7 justify-between"
+        >
             <!-- left side -->
             <div
-                class="mx-3 w-[17rem] h-[100vh] text-whiteD9 hidden-scrollbar overflow-y-auto flex flex-col justify-between"
+                class="hidden h-screen sm:flex mx-3 w-full lg:w-[17rem] h-[100vh] text-whiteD9 hidden-scrollbar overflow-y-auto  flex-col justify-between"
             >
                 <div class="mb-10">
                     <nav class="flex flex-col gap-2">
@@ -32,21 +34,18 @@
                         <a href="/" class="p-3">
                             <i class="fab text-[24px] fa-twitter"></i>
                         </a>
-
                         <a href="#" class="p-3 flex items-center">
                             <img src="./assets/images/home.svg" alt="" />
                             <span class="ml-5 font-size-4 font-semibold"
                                 >Home</span
                             >
                         </a>
-
                         <a href="#" class="p-3 flex items-center">
                             <img src="./assets/images/Explore.svg" alt="" />
                             <span class="ml-5 font-size-4 font-semibold"
                                 >Explore</span
                             >
                         </a>
-
                         <a href="#" class="p-3 flex items-center">
                             <div class="relative">
                                 <img
@@ -63,35 +62,30 @@
                                 >Notifications</span
                             >
                         </a>
-
                         <a href="#" class="p-3 flex items-center">
                             <img src="./assets/images/Messages.svg" alt="" />
                             <span class="ml-5 font-size-4 font-semibold"
                                 >Messages</span
                             >
                         </a>
-
                         <a href="#" class="p-3 flex items-center">
                             <img src="./assets/images/Bookmarks.svg" alt="" />
                             <span class="ml-5 font-size-4 font-semibold"
                                 >Bookmarks</span
                             >
                         </a>
-
                         <a href="#" class="p-3 flex items-center">
                             <img src="./assets/images/Lists.svg" alt="" />
                             <span class="ml-5 font-size-4 font-semibold"
                                 >Lists</span
                             >
                         </a>
-
                         <a href="#" class="p-3 flex items-center">
                             <img src="./assets/images/Profile.svg" alt="" />
                             <span class="ml-5 font-size-4 font-semibold"
                                 >Profile</span
                             >
                         </a>
-
                         <a href="#" class="p-3 flex items-center">
                             <img src="./assets/images/More.svg" alt="" />
                             <span class="ml-5 font-size-4 font-semibold"
@@ -99,7 +93,6 @@
                             >
                         </a>
                     </nav>
-
                     <!-- twit button -->
                     <button
                         class="mt-4 w-full py-4 bg-[#1DA1F2] rounded-full text-white font-semibold text-[17px]"
@@ -107,7 +100,6 @@
                         Tweet
                     </button>
                 </div>
-
                 <!-- user -->
                 <div class="flex items-center mt-auto p-3">
                     <img
@@ -134,8 +126,7 @@
                     </div>
                 </div>
             </div>
-
-            <div class="w-full flex-1 px-4">
+            <div class="w-full lg:flex-1 px-4 h-screen overflow-y-scroll hidden-scrollbar">
                 <!-- header -->
                 <div>
                     <div
@@ -144,10 +135,18 @@
                         <h2 class="text-white font-semibold text-[20px]">
                             Home
                         </h2>
-                        <img src="./assets/images/Top-Tweets.svg" alt="" />
+                        <div class="flex items-center gap-3">
+                            <img src="./assets/images/Top-Tweets.svg" alt="" />
+                            <!-- mobile navigation toggle button -->
+                            <button
+                                id="menuToggle"
+                                class="lg:hidden text-white"
+                            >
+                                <i class="fas fa-bars text-2xl"></i>
+                            </button>
+                        </div>
                     </div>
                 </div>
-
                 <div
                     class="flex flex-col border border-[#2F3336] border-t-0 px-4"
                 >
@@ -165,7 +164,6 @@
                             </p>
                         </div>
                     </div>
-
                     <div class="flex justify-between items-center">
                         <div class="mt-[29px] ml-[66px] flex gap-3">
                             <div>
@@ -214,7 +212,6 @@
                                 </button>
                             </div>
                         </div>
-
                         <button
                             class="px-4 py-2 rounded-full text-white bg-[#1D9BF0] opacity-50 font-semibold text-[15px] line-height-[18px]"
                         >
@@ -222,7 +219,6 @@
                         </button>
                     </div>
                 </div>
-
                 <div
                     class="flex flex-col border border-[#2F3336] border-t-0 px-4"
                 >
@@ -269,7 +265,6 @@
                                         />
                                         <span>57</span>
                                     </div>
-
                                     <div
                                         class="flex items-center gap-3 text-gray1"
                                     >
@@ -280,7 +275,6 @@
                                         />
                                         <span>144</span>
                                     </div>
-
                                     <div
                                         class="flex items-center gap-3 text-gray1"
                                     >
@@ -291,7 +285,6 @@
                                         />
                                         <span>184</span>
                                     </div>
-
                                     <div
                                         class="flex items-center gap-3 text-gray1"
                                     >
@@ -307,7 +300,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div
                     class="flex flex-col border border-[#2F3336] border-t-0 px-4"
                 >
@@ -359,7 +351,6 @@
                                         />
                                         <span>57</span>
                                     </div>
-
                                     <div
                                         class="flex items-center gap-3 text-gray1"
                                     >
@@ -370,7 +361,6 @@
                                         />
                                         <span>144</span>
                                     </div>
-
                                     <div
                                         class="flex items-center gap-3 text-gray1"
                                     >
@@ -381,7 +371,6 @@
                                         />
                                         <span>184</span>
                                     </div>
-
                                     <div
                                         class="flex items-center gap-3 text-gray1"
                                     >
@@ -397,7 +386,82 @@
                         </div>
                     </div>
                 </div>
-
+                <div
+                    class="flex flex-col border border-[#2F3336] border-t-0 px-4"
+                >
+                    <div>
+                        <div class="flex mt-1 pt-1 pl-3">
+                            <img
+                                class="size-[48px] object-cover rounded-full bg-[#101010]"
+                                src="https://logo.com/image-cdn/images/kts928pd/production/08207a1a4c3383abed17d2995786c44959ceaa91-1140x620.png?w=1920&q=72&fm=webp"
+                                alt=""
+                            />
+                            <div class="flex flex-col w-full">
+                                <div class="ml-3 flex items-center h-5">
+                                    <h4 class="text-whiteD9">Twitter</h4>
+                                    <img
+                                        class="font-size-[7px] w-5 h-5 ml-1"
+                                        src="./assets/images/Verified.svg"
+                                        alt=""
+                                    />
+                                    <span class="text-gray1 ml-1"
+                                        >@Twitter . Oct 29</span
+                                    >
+                                </div>
+                                <p
+                                    class="text-whiteD9 ml-3 mt-1 text-[15px] line-height-[18px]"
+                                >
+                                    BIG NEWS lol jk still Twitter
+                                </p>
+                                <!-- footer -->
+                                <div
+                                    class="ml-3 my-3 text-gray1 text-[15px] h-[34px] flex gap-[52px]"
+                                >
+                                    <div
+                                        class="flex items-center gap-3 text-gray1"
+                                    >
+                                        <img
+                                            class="text-[20px] p-2"
+                                            src="./assets/images/Reply.svg"
+                                            alt=""
+                                        />
+                                        <span>6.8K</span>
+                                    </div>
+                                    <div
+                                        class="flex items-center gap-3 text-gray1"
+                                    >
+                                        <img
+                                            class="text-[20px] p-2"
+                                            src="./assets/images/Retweet.svg"
+                                            alt=""
+                                        />
+                                        <span>66.6K</span>
+                                    </div>
+                                    <div
+                                        class="flex items-center gap-3 text-gray1"
+                                    >
+                                        <img
+                                            class="text-[20px] p-2"
+                                            src="./assets/images/React.svg"
+                                            alt=""
+                                        />
+                                        <span>267.1k</span>
+                                    </div>
+                                    <div
+                                        class="flex items-center gap-3 text-gray1"
+                                    >
+                                        <img
+                                            class="text-[20px] p-2"
+                                            src="./assets/images/Share.svg"
+                                            alt=""
+                                        />
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div
                     class="flex flex-col border border-[#2F3336] border-t-0 px-4"
                 >
@@ -439,7 +503,6 @@
                                         />
                                         <span>6.8K</span>
                                     </div>
-
                                     <div
                                         class="flex items-center gap-3 text-gray1"
                                     >
@@ -450,7 +513,6 @@
                                         />
                                         <span>66.6K</span>
                                     </div>
-
                                     <div
                                         class="flex items-center gap-3 text-gray1"
                                     >
@@ -461,7 +523,6 @@
                                         />
                                         <span>267.1k</span>
                                     </div>
-
                                     <div
                                         class="flex items-center gap-3 text-gray1"
                                     >
@@ -477,7 +538,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div
                     class="flex flex-col border border-[#2F3336] border-t-0 px-4"
                 >
@@ -519,7 +579,6 @@
                                         />
                                         <span>6.8K</span>
                                     </div>
-
                                     <div
                                         class="flex items-center gap-3 text-gray1"
                                     >
@@ -530,7 +589,6 @@
                                         />
                                         <span>66.6K</span>
                                     </div>
-
                                     <div
                                         class="flex items-center gap-3 text-gray1"
                                     >
@@ -541,87 +599,6 @@
                                         />
                                         <span>267.1k</span>
                                     </div>
-
-                                    <div
-                                        class="flex items-center gap-3 text-gray1"
-                                    >
-                                        <img
-                                            class="text-[20px] p-2"
-                                            src="./assets/images/Share.svg"
-                                            alt=""
-                                        />
-                                        <span></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div
-                    class="flex flex-col border border-[#2F3336] border-t-0 px-4"
-                >
-                    <div>
-                        <div class="flex mt-1 pt-1 pl-3">
-                            <img
-                                class="size-[48px] object-cover rounded-full bg-[#101010]"
-                                src="https://logo.com/image-cdn/images/kts928pd/production/08207a1a4c3383abed17d2995786c44959ceaa91-1140x620.png?w=1920&q=72&fm=webp"
-                                alt=""
-                            />
-                            <div class="flex flex-col">
-                                <div class="ml-3 flex items-center h-5">
-                                    <h4 class="text-whiteD9">Twitter</h4>
-                                    <img
-                                        class="font-size-[7px] w-5 h-5 ml-1"
-                                        src="./assets/images/Verified.svg"
-                                        alt=""
-                                    />
-                                    <span class="text-gray1 ml-1"
-                                        >@Twitter . Oct 29</span
-                                    >
-                                </div>
-                                <p
-                                    class="text-whiteD9 ml-3 mt-1 text-[15px] line-height-[18px]"
-                                >
-                                    BIG NEWS lol jk still Twitter
-                                </p>
-                                <!-- footer -->
-                                <div
-                                    class="ml-3 my-3 text-gray1 text-[15px] h-[34px] flex gap-[52px]"
-                                >
-                                    <div
-                                        class="flex items-center gap-3 text-gray1"
-                                    >
-                                        <img
-                                            class="text-[20px] p-2"
-                                            src="./assets/images/Reply.svg"
-                                            alt=""
-                                        />
-                                        <span>6.8K</span>
-                                    </div>
-
-                                    <div
-                                        class="flex items-center gap-3 text-gray1"
-                                    >
-                                        <img
-                                            class="text-[20px] p-2"
-                                            src="./assets/images/Retweet.svg"
-                                            alt=""
-                                        />
-                                        <span>66.6K</span>
-                                    </div>
-
-                                    <div
-                                        class="flex items-center gap-3 text-gray1"
-                                    >
-                                        <img
-                                            class="text-[20px] p-2"
-                                            src="./assets/images/React.svg"
-                                            alt=""
-                                        />
-                                        <span>267.1k</span>
-                                    </div>
-
                                     <div
                                         class="flex items-center gap-3 text-gray1"
                                     >
@@ -638,9 +615,8 @@
                     </div>
                 </div>
             </div>
-
             <!-- right side -->
-            <div class="w-[360px] pr-3">
+            <div class="w-full h-screen overflow-y-auto hidden-scrollbar sm:w-[360px] pr-3">
                 <!-- search input -->
                 <div
                     class="h-[42px] flex items-center bg-lightDark rounded-full text-gray1"
@@ -652,7 +628,6 @@
                         placeholder="Search Twitter"
                     />
                 </div>
-
                 <!-- trends -->
                 <div class="mt-3 bg-lightDark rounded-xl w-full text-whiteD9">
                     <div class="flex justify-between py-3">
@@ -667,7 +642,6 @@
                             alt=""
                         />
                     </div>
-
                     <!-- trending list -->
                     <div class="flex flex-col px-4 py-3 gap-6">
                         <!-- trending item -->
@@ -683,7 +657,6 @@
                             <p class="text-[15px]">#SQUID</p>
                             <p class="text-[13px] text-gray1">2,066 Tweets</p>
                         </div>
-
                         <!-- trending item -->
                         <div class="flex flex-col gap-1">
                             <div class="flex justify-between items-center">
@@ -697,7 +670,6 @@
                             <p class="text-[15px]">#SQUID</p>
                             <p class="text-[13px] text-gray1">2,066 Tweets</p>
                         </div>
-
                         <!-- trending item -->
                         <div class="flex flex-col gap-1">
                             <div class="flex justify-between items-center">
@@ -711,7 +683,6 @@
                             <p class="text-[15px]">#SQUID</p>
                             <p class="text-[13px] text-gray1">2,066 Tweets</p>
                         </div>
-
                         <!-- trending item -->
                         <div class="flex flex-col gap-1">
                             <div class="flex justify-between items-center">
@@ -726,14 +697,12 @@
                             <p class="text-[13px] text-gray1">2,066 Tweets</p>
                         </div>
                     </div>
-
                     <button
                         class="text-[15px] p-4 pt-0 text-[#1D9BF0] text-start font-semibold"
                     >
                         Show more
                     </button>
                 </div>
-
                 <!-- follows -->
                 <div class="mt-3 bg-lightDark rounded-xl w-full text-whiteD9">
                     <div class="flex justify-between py-3">
@@ -743,7 +712,6 @@
                             Who to follow
                         </h3>
                     </div>
-
                     <!-- follows list -->
                     <div class="flex flex-col px-4 py-3 gap-6">
                         <!-- follow item -->
@@ -754,7 +722,6 @@
                                     src="https://lh4.googleusercontent.com/rAu6Oi1vFIlx747JxosPs9qs3vd08vqU49L1eLWojiWrIIAj5xDEcdSwYS_AeGLwSGR6HmWnkeKk7DZJN3oReVQOop8b7q29kzkC3DEAS3XRtv828wTac8OPlPsdQwgOwd573PaF"
                                     alt=""
                                 />
-
                                 <div class="ml-3">
                                     <div class="flex">
                                         <h4 class="text-whiteD9">
@@ -776,7 +743,6 @@
                                 Follow
                             </button>
                         </div>
-
                         <!-- follow item -->
                         <div class="flex items-center justify-between">
                             <div class="flex items-center">
@@ -785,7 +751,6 @@
                                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjaCfq-oOIyUF7zwkUxU76MFIZGKmxgLz2eQ&s"
                                     alt=""
                                 />
-
                                 <div class="ml-3">
                                     <div class="flex">
                                         <h4 class="text-whiteD9">CNN</h4>
@@ -805,7 +770,6 @@
                                 Follow
                             </button>
                         </div>
-
                         <!-- follow item -->
                         <div class="flex items-center justify-between">
                             <div class="flex items-center">
@@ -814,7 +778,6 @@
                                     src="https://logo.com/image-cdn/images/kts928pd/production/08207a1a4c3383abed17d2995786c44959ceaa91-1140x620.png?w=1920&q=72&fm=webp"
                                     alt=""
                                 />
-
                                 <div class="ml-3">
                                     <div class="flex">
                                         <h4 class="text-whiteD9">Twitter</h4>
@@ -835,14 +798,12 @@
                             </button>
                         </div>
                     </div>
-
                     <button
                         class="text-[15px] p-4 pt-0 text-[#1D9BF0] text-start font-semibold"
                     >
                         Show more
                     </button>
                 </div>
-
                 <!-- footer -->
                 <footer class="mt-4 px-4 w-full text-gray1 text-[13px] mb-20">
                     <div class="flex gap-3">
