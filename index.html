@@ -26,7 +26,7 @@
         >
             <!-- left side -->
             <div
-                class="h-screen sm:flex mx-3 w-full lg:w-[17rem] h-[100vh] text-whiteD9 hidden-scrollbar overflow-y-auto  flex-col justify-between"
+                class="h-screen sm:flex mx-3 w-full lg:w-[17rem] h-[100vh] text-whiteD9 hidden-scrollbar overflow-y-auto flex-col justify-between"
             >
                 <div class="mb-10">
                     <nav class="flex flex-col gap-2">
@@ -126,7 +126,9 @@
                     </div>
                 </div>
             </div>
-            <div class="w-full lg:flex-1 px-4 h-screen overflow-y-scroll hidden-scrollbar">
+            <div
+                class="w-full lg:flex-1 px-4 h-screen overflow-y-scroll hidden-scrollbar"
+            >
                 <!-- header -->
                 <div>
                     <div
@@ -157,11 +159,11 @@
                                 src="./assets/images/Profile.png"
                                 alt=""
                             />
-                            <p
-                                class="text-gray1 ml-3 text-[20px] line-height-[23px]"
+                            <input
+                                placeholder="What’s happening?"
+                                class="text-gray1 w-full ml-3 text-[20px] line-height-[23px] bg-transparent outline-none p-2 resize-none"
                             >
-                                What’s happening?
-                            </p>
+                            </input>
                         </div>
                     </div>
                     <div class="flex justify-between items-center">
@@ -616,7 +618,9 @@
                 </div>
             </div>
             <!-- right side -->
-            <div class="w-full h-screen overflow-y-auto hidden-scrollbar sm:w-[360px] pr-3">
+            <div
+                class="w-full h-screen overflow-y-auto hidden-scrollbar sm:w-[360px] pr-3"
+            >
                 <!-- search input -->
                 <div
                     class="h-[42px] flex items-center bg-lightDark rounded-full text-gray1"
